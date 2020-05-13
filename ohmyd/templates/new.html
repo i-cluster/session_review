@@ -1,0 +1,8 @@
+<h2>아무 글 쓰기</h2>
+
+<form method="POST" class="article-form">
+    {% csrf_token %}
+    제목 : {{art.title}}<br>
+    내용 : {{art.content}}<br>
+    <button type="submit">글 쓰기</button>
+</form>

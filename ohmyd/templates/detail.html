@@ -1,0 +1,9 @@
+<h2>아무 글 보기</h2>
+
+<h4>{{art.title}}</h4>
+<p>{{art.content}}</p>
+<p>{{art.pub_date}}</p>
+
+<a href="{% url 'edit' a=art.id %}">수정하기</a>
+<a href="{% url 'delete' w=art.id%}">삭제하기</a>
+<a href="{% url 'main' %}">돌아가기</a>
